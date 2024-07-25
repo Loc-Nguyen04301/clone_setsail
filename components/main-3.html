@@ -1,3 +1,43 @@
 <div class="container">
-    hello main3 
+    <div class="swiper mySwiper-comment text-center" style="padding-top: 110px; padding-bottom: 36px;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="mb-5">
+                    <img src="../assets/avatar.png" />
+                </div>
+                <p style="font-size: 20px; max-width: 80%; margin: 0 auto">"Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit. Aenean commodo
+                    ligula eget dolor.
+                    Aenean massa. Cum sociis"
+                </p>
+            </div>
+            <div class="swiper-slide">
+                <div class="mb-5">
+                    <img src="../assets/avatar.png" />
+                </div>
+                <p style="font-size: 20px; max-width: 80%; margin: 0 auto">"Lorem ipsum dolor sit amet, consectetuer
+                    adipiscing elit. Aenean commodo
+                    ligula eget dolor.
+                    Aenean massa. Cum sociis"
+                </p>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 </div>
+
+<script>
+    var swiper = new Swiper(".mySwiper-comment", {
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+        },
+        speed: 500,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
