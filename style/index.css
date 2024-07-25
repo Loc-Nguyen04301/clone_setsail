@@ -8,6 +8,8 @@
     --search-height: 78px
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +35,15 @@ h6 {
 h1 {
     font-size: 65px;
     letter-spacing: -0.2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.grid {
+    display: grid;
 }
 
 @media only screen and (min-width: 681px) and (max-width: 768px) {
@@ -87,74 +98,5 @@ header {
 @media (min-width: 992px) {
     #header-tablet {
         display: none !important;
-    }
-}
-
-#container-form {
-    width: 88%;
-    height: var(--search-height);
-    margin: auto;
-    position: relative;
-    left: 0px;
-
-    bottom: calc(var(--search-height)/2);
-
-    @media (max-width: 767.98px) {
-        height: calc(var(--search-height)*2);
-        bottom: calc(var(--search-height)*4/2);
-    }
-}
-
-#form-main-1 {
-    #filter-col {
-        float: left;
-        width: 27%;
-        height: var(--search-height);
-        border-right: 1px solid #f1f1f1;
-        color: grey;
-
-        .filter-icon {
-            position: absolute;
-            z-index: 1;
-            height: 100%;
-            align-content: center;
-            left: 25px;
-        }
-
-        .input-search {
-            padding: 16px 20px 16px 53px;
-            width: 100%;
-            height: var(--search-height);
-            color: grey;
-            font-size: 0.875rem;
-        }
-    }
-
-    #filter-button-col {
-        float: left;
-        width: 19%;
-        height: var(--search-height);
-        background-color: var(--primary-color);
-
-        span {
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 13px;
-            color: white;
-            display: block;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            align-content: center;
-            letter-spacing: 0.05rem;
-        }
-    }
-
-    @media (max-width: 767.98px) {
-
-        #filter-col,
-        #filter-button-col {
-            width: 100%;
-        }
     }
 }

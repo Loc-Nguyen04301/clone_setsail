@@ -1,0 +1,108 @@
+#main-1 {
+    #container-form {
+        width: 88%;
+        height: var(--search-height);
+        margin: auto;
+        position: relative;
+        left: 0px;
+
+        bottom: calc(var(--search-height)/2);
+
+        @media (max-width: 767.98px) {
+            height: calc(var(--search-height)*2);
+            bottom: calc(var(--search-height)*4/2);
+        }
+    }
+
+    #form-main-1 {
+        #filter-col {
+            float: left;
+            width: 27%;
+            height: var(--search-height);
+            border-right: 1px solid #f1f1f1;
+            color: grey;
+
+            .filter-icon {
+                position: absolute;
+                z-index: 1;
+                height: 100%;
+                align-content: center;
+                left: 25px;
+            }
+
+            .input-search {
+                padding: 16px 20px 16px 53px;
+                width: 100%;
+                height: var(--search-height);
+                color: grey;
+                font-size: 0.875rem;
+            }
+        }
+
+        #filter-button-col {
+            float: left;
+            width: 19%;
+            height: var(--search-height);
+            background-color: var(--primary-color);
+
+            span {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 13px;
+                color: white;
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                align-content: center;
+                letter-spacing: 0.05rem;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+
+            #filter-col,
+            #filter-button-col {
+                width: 100%;
+            }
+        }
+    }
+
+    #gallery-trip {
+        .image-container {
+            color: white;
+
+            .price-text {
+                font-size: 18px;
+            }
+        }
+
+        .image-container:hover {
+            cursor: pointer;
+
+            img {
+                transform: scale(1.03);
+            }
+        }
+
+        #grid-gallery-trip {
+            grid-template-columns: auto auto auto auto;
+            gap: 30px;
+
+            @media (max-width: 991.98px) {
+                grid-template-columns: auto auto;
+            }
+
+            @media (max-width: 767.98px) {
+                grid-template-columns: auto;
+            }
+        }
+
+    }
+
+    #grid-introduce {
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
