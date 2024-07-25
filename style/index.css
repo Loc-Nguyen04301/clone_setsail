@@ -100,3 +100,15 @@ header {
         display: none !important;
     }
 }
+
+/* swiper */
+
+.swiper-pagination-bullet {
+    background: var(--primary-color) !important;
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 8px !important
+}

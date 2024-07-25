@@ -1,1 +1,89 @@
-<div>main-2</div>
+<div class="perfect-holiday">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col">
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xs-6 text-center">
+                <span style="color: #3fd0d4; font-size: 33px; font-family: Satisfy, cursive; font-weight: 400;">Plan
+                    The</span>
+                <h1 style="font-weight: 600;">Perfect Holiday</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis
+                    the
+                </p>
+            </div>
+            <div class="col">
+            </div>
+        </div>
+    </div>
+    <div class="mt-5 position-relative" style="padding-bottom: 50px;">
+        <div class="swiper mySwiper-trip">
+            <div class="swiper-wrapper">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+</div>
+
+<script>
+    var swiper = new Swiper(".mySwiper-trip", {
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        spaceBetween: 20,
+        // freeMode: true,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay: 3000,
+        },
+        speed: 3000,
+        slideToClickedSlide: true,
+    });
+
+
+    const swiperWrapper = document.querySelector(".swiper-wrapper");
+    const itemData = [
+        {
+            imgSrc: "../assets/item-swiper.jpg",
+            calendar: 12,
+            user: "13+",
+            country: "Europe",
+            city: "Hello11",
+            description: "Lorem ipsum dolor sit amet, consectetuer adipiscing el.…",
+            price: "$1740",
+        },
+    ];
+
+    const createSwiperItem = (data) => {
+        const item = document.createElement("div");
+        item.className = "swiper-slide";
+
+        item.innerHTML = `
+        <a href="#">
+            <img src="${data.imgSrc}" />
+        </a>
+        <div class="" style="background-color: var(--primary-color); padding: 6px 0px;">
+            <div class="w-100 d-grid text-white" style="grid-template-columns: 25% 25% 30% 20%;">
+                <span class="text-center"><i class="fa-regular fa-calendar mx-2"></i>${data.calendar}</span>
+                <span class="text-center"><i class="fa-regular fa-user mx-2"></i>${data.user}</span>
+                <span class="text-center"><i class="fa-solid fa-location-dot mx-2"></i>${data.country}</span>
+            </div>
+        </div>
+        <div class="p-4">
+            <h4>${data.city}</h4>
+            <p class="my-2">${data.description}</p>
+            <strong class="d-block">${data.price}</strong>
+        </div>
+      `;
+        return item;
+    }
+
+    for (let i = 0; i < 15; i++) {
+        swiperWrapper.appendChild(createSwiperItem(itemData[0]));
+    }
+</script>
