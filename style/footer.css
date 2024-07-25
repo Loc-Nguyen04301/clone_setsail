@@ -1,0 +1,50 @@
+footer {
+    .flex-subscribe {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+    }
+
+    .button-join-now {
+        padding: 18px 66px;
+
+        @media only screen and (max-width: 1024px) {
+            padding: 14px 42px;
+        }
+    }
+
+    .footer-bottom {
+        background-color: #212121;
+        color: white;
+
+        .grid-footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+
+            @media only screen and (max-width: 1000px) {
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 70px;
+            }
+
+            @media only screen and (max-width: 680px) {
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 70px;
+            }
+
+            .link-footer {
+                color: white;
+
+                &:hover {
+                    color: var(--primary-color)
+                }
+            }
+        }
+    }
+}
