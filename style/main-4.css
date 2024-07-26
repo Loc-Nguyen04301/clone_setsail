@@ -6,7 +6,7 @@
         .text-container {
             color: white;
             text-align: center;
-            padding: 106px 345px 0 345px;
+            padding-top: 106px;
 
             @media screen and (max-width: 1200px) {
                 padding-left: 80px;
