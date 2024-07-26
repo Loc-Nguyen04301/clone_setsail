@@ -104,5 +104,10 @@
         margin-top: 100px;
         display: grid;
         grid-template-columns: auto auto auto auto;
+
+        @media only screen and (max-width: 1000px) {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 48px;
+        }
     }
 }

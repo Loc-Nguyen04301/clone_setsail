@@ -1,0 +1,25 @@
+#main-4 {
+    #go-discover {
+        background-image: url("../assets/h1-parallax-img-1.jpg");
+        background-size: cover;
+
+        .text-container {
+            color: white;
+            text-align: center;
+            padding: 106px 345px 0 345px;
+
+            @media screen and (max-width: 1200px) {
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+        }
+
+        #container-video {
+            margin: 0 150px;
+
+            @media screen and (max-width: 1200px) {
+                margin: 0;
+            }
+        }
+    }
+}

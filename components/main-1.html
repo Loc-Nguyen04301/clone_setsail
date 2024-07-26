@@ -62,7 +62,7 @@
             </div>
         </div>
     </div>
-    <div class="my-5">
+    <div class="py-5">
         <img src="../assets/greeting-paris.png" />
     </div>
     <!-- <div id="grid-introduce">
@@ -86,8 +86,8 @@
 
         item.innerHTML = `
         <img src="${data.imgSrc}" alt="${data.location}" />
-        <div class="position-absolute w-100 bottom-0 image-text">
-          <div class="d-flex justify-content-around align-items-center text-white fw-bold gap-5">
+        <div class="position-absolute w-100 image-text" style="bottom:10px">
+          <div class="d-flex justify-content-around align-items-end text-white fw-bold gap-5">
             <div>
               <span>${data.location}</span>
               <p>${data.rating}</p>
@@ -120,11 +120,11 @@
         item.innerHTML = `
           <div>
             <img src="${data.imgSrc}" />
-            <div class="mt-3">
+            <div class="mt-3 mb-2">
                 <span style="font-size: 18px; font-weight: 600;">${data.title}</span>
             </div>
             <div>
-                <span>${data.description}</span>
+                <span style="font-size: 14px; color: #505050">${data.description}</span>
             </div>
         </div>
       `;

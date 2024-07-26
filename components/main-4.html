@@ -1,0 +1,42 @@
+<div id="go-discover">
+    <div class="container">
+        <div class="text-container">
+            <span style="font-size: 33px; font-family: Satisfy, cursive; font-weight: 400;">Go &
+                Discover</span>
+            <h1 style="font-weight: 600; margin-bottom: 15px;">Breathtaking Cities</h1>
+            <p style="font-size: 17px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula
+                eget dolor. Aenean
+                massa.
+                Cum sociis
+                the
+            </p>
+        </div>
+        <div class="mt-4" id="container-video">
+            <div class="position-relative" style="bottom: -10px;">
+                <img src="../assets/h1-video-button-img.jpg" class="w-100" />
+                <a class="position-absolute w-100 h-100 bottom-0 start-0" href="https://vimeo.com/71319358"
+                    target="_blank">
+                    <span style="
+                        margin: 0;position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);">
+                        <img src="../assets/play-button.png" width="69" height="69" />
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const goDiscover = document.getElementById('go-discover');
+    let initialBgPositionY = -3; // Initial background position Y as defined in CSS
+
+    window.addEventListener('scroll', function () {
+        const scrollY = window.scrollY;
+        const newBgPositionY = initialBgPositionY + scrollY * 0.5; // Adjust the factor as needed
+        goDiscover.style.backgroundPosition = `50% ${newBgPositionY}px`;
+    });
+</script>
